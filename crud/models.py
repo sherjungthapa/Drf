@@ -6,4 +6,5 @@ class Employee(models.Model):
     age=models.IntegerField()
     email=models.EmailField()
     message=models.TextField()
+    number=models.CharField(max_length=10,null=True)
     is_deleted = models.BooleanField(default=False)
